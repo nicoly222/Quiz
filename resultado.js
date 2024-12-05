@@ -29,12 +29,13 @@ function resultadofinal(){
     document.getElementById("resultado").innerHTML = resultado;
 
     localStorage.setItem('merida', contMerida)
-    localStorage.setItem('moanna', contMoana)
+    localStorage.setItem('moana', contMoana)
     localStorage.setItem('tiana', contTiana)
     localStorage.setItem('mulan', contMulan)
 
     let maior = 0 
     let pagina
+    
     if(contMerida > maior){
         pagina = 'merida'
     }
@@ -49,6 +50,6 @@ function resultadofinal(){
     }
 
     setTimeout(() => {
-        window.open(pagina+ '')
-    }, 5000);
+        window.open(pagina+ 'TelaMerida.html')
+    }, 3000);
 }
