@@ -4,7 +4,7 @@ function resultadofinal(){
     let contTiana=0;
     let contMulan=0;
 
-    let radios = document.querrySelectorAll('input[type="radio"]')
+    let radios = document.querySelectorAll('input[type="radio"]')
     console.log(radios)
 
     radios.forEach(e => {
@@ -12,9 +12,9 @@ function resultadofinal(){
         if(e.checked){
             if(e.value == "Merida"){
                 contMerida++;
-            }else if (e.velue == "Moana"){
+            }else if (e.value == "Moana"){
                 contMoana++;
-            }else if(e.vaalue == "Tiana"){
+            }else if(e.value == "Tiana"){
                 contTiana++;
             }else if(e.value == "Mulan"){
                 contMulan++;
@@ -50,6 +50,18 @@ function resultadofinal(){
     }
 
     setTimeout(() => {
-        window.open(pagina+ 'TelaMerida.html')
-    }, 3000);
+        window.open( 'TelaMerida.html')
+    }, 5000);
+
+    setTimeout(() => {
+        window.open( 'TelaMoana.html')
+    }, 5000);
+
+    setTimeout(() => {
+        window.open( 'TelaTiana.html')
+    }, 5000);
+
+    setTimeout(() => {
+        window.open( 'TelaMulan.html')
+    }, 5000);
 }

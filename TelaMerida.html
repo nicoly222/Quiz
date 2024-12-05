@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Merida</title>
 </head>
 <body>
+
     <h1>Você é a Merida!!</h1>
     <h1 id="votos"></h1>
+    <img src="Merida.jpg" alt="foto merida">
+    <p>Corajosa, determinada e com um espírito livre! Assim como ela, você valoriza sua independência e não tem medo de lutar pelo que acredita. Sua força, autenticidade e paixão pela liberdade inspiram todos ao seu redor, mostrando que o importante é ser fiel a si mesmo enquanto trilha seu próprio caminho!</p>
 
     <script>
         let contMerida = localStorage.getItem('merida')
 
         document.querySelector('#votos'). innerHTML = 'Votos:' + contMerida
     </script>
-</body>
+</body> 
 </html>
