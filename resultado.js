@@ -7,7 +7,7 @@ function resultadofinal(){
     let radios = document.querrySelectorAll('input[type="radio"]')
     console.log(radios)
 
-    radios.array.forEach(e => {
+    radios.forEach(e => {
 
         if(e.checked){
             if(e.value == "Merida"){
@@ -23,5 +23,32 @@ function resultadofinal(){
         
     })
 
-    let resultado
+    let resultado = `Merida = ${contMerida}<br>
+    Moana = ${contMoana}<br> Tiana = ${contTiana}<br> Mulan = ${contMulan}`;
+
+    document.getElementById("resultado").innerHTML = resultado;
+
+    localStorage.setItem('merida', contMerida)
+    localStorage.setItem('moanna', contMoana)
+    localStorage.setItem('tiana', contTiana)
+    localStorage.setItem('mulan', contMulan)
+
+    let maior = 0 
+    let pagina
+    if(contMerida > maior){
+        pagina = 'merida'
+    }
+    if(contMoana > maior){
+        pagina = 'moana'
+    }
+    if(contTiana > maior){
+        pagina = 'tiana'
+    }
+    if(contMulan> maior){
+        pagina = 'mulan'
+    }
+
+    setTimeout(() => {
+        window.open(pagina+ '')
+    }, 5000);
 }
