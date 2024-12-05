@@ -1,0 +1,37 @@
+#conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btniniciar{
+     background-color: pink;
+     width: 10rem;
+     height: 50px;
+     border-style: none;
+     border-radius: 8rem;
+     cursor: pointer;
+     margin-left: 9rem;
+
+    }
+    #btniniciar:hover{
+        background-color: pink;
+    }
+
+ #imgprincesa{
+  width: 50rem; 
+  height: auto;
+  border-radius: 8px;
+ margin-left: 3rem;
+ margin-top: 8rem;
+
+ }
+ 
+
+ p{
+    font-size: 40px;
+    
+ }
+
+ #textbtn{
+    margin-top: 10rem;
+ }
