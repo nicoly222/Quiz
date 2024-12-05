@@ -1,55 +1,53 @@
-function resultadofinal(){
-    let contMerida=0;
-    let contMoana=0;
-    let contTiana=0;
-    let contMulan=0;
+function resultadofinal() {
+    let contMerida = 0;
+    let contMoana = 0;
+    let contTiana = 0;
+    let contMulan = 0;
 
-    let radios = document.querrySelectorAll('input[type="radio"]')
-    console.log(radios)
+    let radios = document.querySelectorAll('input[type="radio"]'); // Corrigido o método
+    console.log(radios);
 
     radios.forEach(e => {
-
-        if(e.checked){
-            if(e.value == "Merida"){
+        if (e.checked) {
+            if (e.value === "Merida") {
                 contMerida++;
-            }else if (e.velue == "Moana"){
+            } else if (e.value === "Moana") { // Corrigido o erro de digitação
                 contMoana++;
-            }else if(e.vaalue == "Tiana"){
+            } else if (e.value === "Tiana") { // Corrigido o erro de digitação
                 contTiana++;
-            }else if(e.value == "Mulan"){
+            } else if (e.value === "Mulan") {
                 contMulan++;
             }
         }
-        
-    })
+    });
 
     let resultado = `Merida = ${contMerida}<br>
     Moana = ${contMoana}<br> Tiana = ${contTiana}<br> Mulan = ${contMulan}`;
 
     document.getElementById("resultado").innerHTML = resultado;
 
-    localStorage.setItem('merida', contMerida)
-    localStorage.setItem('moana', contMoana)
-    localStorage.setItem('tiana', contTiana)
-    localStorage.setItem('mulan', contMulan)
+    // Armazenando os resultados no localStorage
+    localStorage.setItem('merida', contMerida);
+    localStorage.setItem('moana', contMoana); // Corrigido o erro de digitação
+    localStorage.setItem('tiana', contTiana);
+    localStorage.setItem('mulan', contMulan);
 
-    let maior = 0 
-    let pagina
-    
-    if(contMerida > maior){
-        pagina = 'merida'
-    }
-    if(contMoana > maior){
-        pagina = 'moana'
-    }
-    if(contTiana > maior){
-        pagina = 'tiana'
-    }
-    if(contMulan> maior){
-        pagina = 'mulan'
+    // Verificando o personagem com mais votos
+    let maior = Math.max(contMerida, contMoana, contTiana, contMulan); // Encontrando o maior número de votos
+    let pagina = ''; // Inicializando a variável de página
+
+    if (contMerida === maior) {
+        pagina = 'merida';
+    } else if (contMoana === maior) {
+        pagina = 'moana';
+    } else if (contTiana === maior) {
+        pagina = 'tiana';
+    } else if (contMulan === maior) {
+        pagina = 'mulan';
     }
 
+    // Abertura de uma nova página após 3 segundos
     setTimeout(() => {
-        window.open(pagina+ 'TelaMerida.html')
+        window.open(pagina + 'Tela' + capitalizeFirstLetter(pagina) + '.html', '_blank'); // Corrigido para abrir a página certa
     }, 3000);
 }
