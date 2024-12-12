@@ -9,5 +9,12 @@
     <h1>Você é a Tiana!</h1>
     <h1 id="votos"></h1>
     <img src="Tiana.jpg">
+    <p>Determinada, trabalhadora e cheia de sonhos! Assim como ela, você acredita que com esforço e dedicação é possível conquistar tudo o que deseja. Seu foco e generosidade te tornam uma inspiração para os outros, mostrando que é possível equilibrar trabalho duro com amor e amizade no caminho para realizar seus sonhos!</p>
+
+    <script>
+        let contTiana = localStorage.getItem('tiana')
+        document.querySelector('#votos'). innerHTML = 'Votos:' + contTiana
+    </script>
+    
 </body>
 </html>

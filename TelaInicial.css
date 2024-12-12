@@ -29,9 +29,37 @@
 
  p{
     font-size: 40px;
+    margin-left: 10px;
     
  }
 
  #textbtn{
     margin-top: 10rem;
  }
+
+
+ @media (max-width: 670px) {
+   #conteiner {
+       flex-direction: column; /* Altera o layout para coluna */
+       text-align: center; 
+       align-items: center; 
+       padding: 20px;
+   }
+
+   #imgprincesa {
+       width: 100%; /* A imagem ocupará toda a largura da tela */
+       max-width: 100%; /* Para que a imagem não ultrapasse a tela */
+       margin: 0; /* Remove a margem */
+       margin-bottom: 0px; /* Adiciona um pequeno espaço abaixo da imagem */
+   }
+
+   p {
+       font-size: 30px; /* Ajusta o tamanho da fonte para telas menores */
+       margin-bottom: 20px; /* Adiciona margem abaixo do parágrafo */
+   }
+
+   #btniniciar {
+       margin-left: 0; /* Remove a margem lateral */
+       margin-top: 20px; /* Espaço acima do botão */
+   }
+}

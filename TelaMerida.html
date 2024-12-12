@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="telaMerida.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merida</title>
 </head>
 <body>
-
-    <h1>Você é a Merida!!</h1>
     <h1 id="votos"></h1>
-    <img src="Merida.jpg" alt="foto merida">
-    <p>Corajosa, determinada e com um espírito livre! Assim como ela, você valoriza sua independência e não tem medo de lutar pelo que acredita. Sua força, autenticidade e paixão pela liberdade inspiram todos ao seu redor, mostrando que o importante é ser fiel a si mesmo enquanto trilha seu próprio caminho!</p>
-
+    <div id="conteiner">
+    <img id ="imgM" src="Merida.jpg" alt="foto merida">
+    <h1 class="texto">Você é a Merida!</h1>
+    <p class="texto">Corajosa, determinada e com um espírito livre! Assim como ela, você valoriza sua independência e não tem medo de lutar pelo que acredita. <br>Sua força, autenticidade e paixão pela liberdade inspiram todos ao seu redor, mostrando que o importante é ser fiel a si mesmo enquanto trilha seu próprio caminho!</p>
+   
+</div>
     <script>
         let contMerida = localStorage.getItem('merida')
 

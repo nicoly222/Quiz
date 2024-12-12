@@ -7,10 +7,16 @@
 </head>
 <body>
 
-    <h1>Você é a Mulan!</h1>
+    <h1 class="texto">Você é a Mulan!</h1>
     <h1 id="votos"></h1>
-    <img src="Mulan.jpg">
-    <p></p>
+    <img id="imgMu" src="Mulan.jpg">
+    <p class="texto">Corajosa, leal e cheia de determinação! Assim como ela, você tem um forte senso de responsabilidade e está sempre disposto a enfrentar desafios por aqueles que ama. Sua força interior e coragem para quebrar barreiras inspiram todos ao seu redor, mostrando que a verdadeira heroína é aquela que acredita em si mesma!</p>
+
+    <script>
+        let contMulan = localStorage.getItem('mulan')
+        
+        document.querySelector('#votos'). innerHTML = 'Votos:' + contMulan
+    </script>
     
 </body>
 </html>

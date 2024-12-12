@@ -1,0 +1,54 @@
+/* Define o fundo da página */
+body {
+    
+        font-family: "Roboto", serif;
+        font-weight: 300;
+        font-style: normal; 
+    background-color: #BFDDF3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Organiza os votos e o contêiner verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    height: 100vh;           /* Altura total da janela */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização do texto de votos */
+#votos {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;         /* Tamanho padrão da fonte */
+    margin-bottom: 1rem;     /* Espaço entre os votos e o contêiner */
+}
+
+/* Estilização do contêiner */
+#conteiner {
+    background-color: #004173;
+    width: 90%;              /* Responsivo */
+    max-width: 45rem;        /* Largura máxima */
+    border-style: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;  /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center;     /* Centraliza o conteúdo horizontalmente */
+    padding: 2rem;           /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Estilização da imagem */
+#imgM {
+    width: 20rem;            /* Largura fixa */
+    height: auto;            /* Mantém a proporção */
+    margin-bottom: 1rem;     /* Espaço entre a imagem e o texto */
+}
+
+/* Estilização do texto */
+.texto {
+    color: white;
+    text-align: center;
+    font-size: 1rem;         /* Tamanho padrão da fonte */
+}
+

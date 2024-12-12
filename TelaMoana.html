@@ -9,5 +9,11 @@
     <h1>Você é a Moana!</h1>
     <h1 id="votos"></h1>
     <img src="Moana.jpg">
+    <p>Destemida, aventureira e cheia de determinação! Assim como ela, você tem um espírito livre, ama explorar o desconhecido e não tem medo de seguir o que o coração manda. Sua coragem e senso de liderança te tornam alguém especial, pronto para enfrentar qualquer desafio e descobrir o seu verdadeiro caminho!</p>
+
+    <script>
+        let contMoana = localStorage.getItem('moana')
+        document.querySelector('#votos'). innerHTML = 'Votos:' + contMoana
+    </script>
 </body>
 </html>
