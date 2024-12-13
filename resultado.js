@@ -36,9 +36,7 @@ function resultadofinal(){
     let maior = 0 
     let pagina
     
-    if(contMerida > maior){
-        pagina = 'merida'
-    }
+   
     if(contMoana > maior){
         pagina = 'moana'
     }
@@ -48,10 +46,11 @@ function resultadofinal(){
     if(contMulan> maior){
         pagina = 'mulan'
     }
+    if(contMerida > maior){
+        pagina = 'merida'
+    }
 
-    setTimeout(() => {
-        window.open( 'TelaMerida.html')
-    }, 5000);
+   
 
     setTimeout(() => {
         window.open( 'TelaMoana.html')
@@ -63,5 +62,9 @@ function resultadofinal(){
 
     setTimeout(() => {
         window.open( 'TelaMulan.html')
+    }, 5000);
+
+    setTimeout(() => {
+        window.open( 'TelaMerida.html')
     }, 5000);
 }
