@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="telaMoana.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moana</title>
 </head>
 <body>
-    <h1>Você é a Moana!</h1>
+    <div id="conteiner">
     <h1 id="votos"></h1>
-    <img src="Moana.jpg">
-    <p>Destemida, aventureira e cheia de determinação! Assim como ela, você tem um espírito livre, ama explorar o desconhecido e não tem medo de seguir o que o coração manda. Sua coragem e senso de liderança te tornam alguém especial, pronto para enfrentar qualquer desafio e descobrir o seu verdadeiro caminho!</p>
-
+    <img id="imgMo" src="Moana.jpg">
+    <h1 id="titulo" class="texto">Você é a Moana!</h1>
+    <pc class="texto">Destemida, aventureira e cheia de determinação! Assim como ela, você tem um espírito livre, ama explorar o desconhecido e não tem medo de seguir o que o coração manda. Sua coragem e senso de liderança te tornam alguém especial, pronto para enfrentar qualquer desafio e descobrir o seu verdadeiro caminho!</pc>
+</div>
     <script>
         let contMoana = localStorage.getItem('moana')
         document.querySelector('#votos'). innerHTML = 'Votos:' + contMoana

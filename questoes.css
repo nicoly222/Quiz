@@ -30,5 +30,16 @@ h1 {
     font-family: 'Georgia', serif;
   }
 
+  #btnresultado{
+    background-color: rgb(245, 245, 245);
+    border-style: none;
+     border-radius: 8rem;
+     cursor: pointer;
+     width: 8rem;
+     height: 2rem;
+     color: palevioletred;
+     margin-top: 2rem;
+  }
+
 
 
