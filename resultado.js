@@ -7,7 +7,7 @@ function resultadofinal(){
     let radios = document.querySelectorAll('input[type="radio"]');
     console.log(radios);
 
-    // Conta os votos para cada personagem
+   
     radios.forEach(e => {
         if (e.checked) {
             if (e.value == "Merida") {
@@ -22,22 +22,22 @@ function resultadofinal(){
         }
     });
 
-    // Exibe os resultados na página
+    
     let resultado = `Merida = ${contMerida}<br>
     Moana = ${contMoana}<br> Tiana = ${contTiana}<br> Mulan = ${contMulan}`;
 
     document.getElementById("resultado").innerHTML = resultado;
 
-    // Salva os resultados no localStorage
+   
     localStorage.setItem('merida', contMerida);
     localStorage.setItem('moana', contMoana);
     localStorage.setItem('tiana', contTiana);
     localStorage.setItem('mulan', contMulan);
 
-    // Encontra o maior número de votos
+    
     let maior = Math.max(contMoana, contTiana, contMulan, contMerida);
 
-    // Determina qual página deve ser aberta com base no maior número de votos
+    
     let pagina;
     if (maior === contMoana) {
         pagina = 'TelaMoana.html';
@@ -49,7 +49,7 @@ function resultadofinal(){
         pagina = 'TelaMerida.html';
     }
 
-    // Abre a página correspondente após 5 segundos
+    
     setTimeout(() => {
         window.open(pagina);
     }, 5000);

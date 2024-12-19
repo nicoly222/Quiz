@@ -29,7 +29,7 @@ body {
 }
 
 .img:hover {
-  transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+  transform: scale(1.05); 
 }
 
 h1 {
@@ -55,9 +55,9 @@ h1 {
 
      label {
       display: block;
-      margin-bottom: 15px;  /* Maior espaçamento entre as opções */
+      margin-bottom: 15px;  
       font-size: 1.2rem;  
-      color: #fffefe;  /* Cor de texto mais suave */
+      color: #fffefe; 
   }
   
     
